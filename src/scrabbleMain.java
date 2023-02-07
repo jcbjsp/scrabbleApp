@@ -6,7 +6,7 @@ public class scrabbleMain {
         System.out.println("Enter the word in to calculate the scrabble score (- to exit):");
         Scanner scanner = new Scanner(System.in);
         String word = scanner.next();
-        while(!word.equals("")){
+        while(!word.equals("-")){
             System.out.println("The score for " + word + " is " + scorer.getScrabbleScore(word));
             System.out.println("Enter the word in to calculate the scrabble score (- to exit):");
             word = scanner.next();
